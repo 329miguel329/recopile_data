@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Datos repetidos sin casos</h1>
-    <div id="table-container-duplicates"></div>
-    <hr>
-    <h1>Datos repetidos con casos</h1>
-    <div id="table-container-duplicates_and_cases"></div>
-    <script type="module" src="./index.js"></script>
+  <h1>Datos repetidos sin casos</h1>
+  <button id="toggleButtonDuplicates">Mostrar Sección</button>
+  <div id="table-container-duplicates" class="hideSection"></div>
+
+  <hr>
+  <h1>Datos repetidos con casos</h1>
+  <button id="toggleButtonDuplicatesAndCases">Mostrar Sección</button>
+  <div id="table-container-duplicates_and_cases" class="hideSection"></div>
+  <script type="module" src="./index.js"></script>
+
+  <hr>
+  <h1>Datos no repetidos</h1>
+  <!-- <button id="toggleButtonNotDuplicates">Mostrar tabla</button> -->
+  <button id="toggleButtonSqlNotDuplicates">Mostrar SQL</button>
+  <div id="table-container-not-duplicates" class="hideSection"></div>
+  <div id="sql-container-not-duplicates" class="hideSection"></div>
+  <script type="module" src="./index.js"></script>
 </body>
 </html>
